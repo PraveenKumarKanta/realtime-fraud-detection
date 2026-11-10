@@ -7,7 +7,7 @@ A lightweight, high-performance real-time fraud detection simulation engine buil
 ## 🚀 Features
 
 - **Relational Schema**: Core tables for `users`, `devices` (IP tracking & fingerprinting), `orders`, and `payments` (status tracking & card details) with foreign key constraints.
-- **Velocity Check Engine**: Database views and analytical queries designed to flag rapid-fire suspicious activities (e.g., $\ge 3$ failed payment attempts in $< 60$ seconds).
+- **Velocity Check Engine**: Database views and analytical queries designed to flag rapid-fire suspicious activities (default: $\ge 3$ failed payment attempts in $< 60$ seconds).
 - **Performance Optimized**: Built-in indexing on high-frequency filter columns (`payment_status`) and composite time window indexes.
 - **Data Generator Simulation**: A Python-powered stream generator using `Faker` to continuously ingest legitimate traffic and simulated card-testing fraud attacks.
 - **Live Terminal UI Dashboard**: Real-time monitoring dashboard built with `rich` that updates in-place to display active fraud alerts and metrics.
